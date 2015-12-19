@@ -11,6 +11,7 @@ def main():
 		print "Improper command entry. Please retry."
 		print "Proper command is 'python create_matrix.py filename'"
 		quit()
+		
 	try:
 		#get inputs for decision matrix
 		print "please enter the headers (i.e.: x y z)"
@@ -24,6 +25,7 @@ def main():
 	except:
 		print "Failed to populate Matrix. Please ensure your headers and dimensions are in the correct format."
 		quit()
+		
 	#exports to csv
 	try:
 		f = open(fname + ".csv", "wb")
